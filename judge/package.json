@@ -1,0 +1,14 @@
+{
+  "name": "judge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "node-docker-api": "^1.1.22"
+  }
+}

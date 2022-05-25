@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  judger:
+    build: judger
+    # Add resource limits
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+    ulimits:
+      nproc: 50
+      nofile:
+        soft: 20000
+        hard: 40000
+    ports:
+      - "80:8080"
